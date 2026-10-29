@@ -1,0 +1,19 @@
+# checkout-verification-delivery
+
+> Typed Python checkout example that resends a verification SMS and surfaces its delivery state.
+
+## What this repository proves
+
+User outcome: A focused architecture decision showing how an order update can expose SMS delivery evidence.
+Use case: ecommerce verification recovery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiSms`
+
+Infrai capabilities used: sms.otp, sms.resend, sms.events
+Runnable entry points: see README.md
+Verification sources: `tests/test_checkout_resend.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

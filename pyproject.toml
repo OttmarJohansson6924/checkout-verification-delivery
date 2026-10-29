@@ -1,0 +1,8 @@
+[project]
+name = "checkout-verification-delivery"
+version = "0.1.0"
+description = "A typed Python example for resending checkout verification SMS and reading delivery state."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
